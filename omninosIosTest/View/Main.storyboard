@@ -380,83 +380,6 @@
             </objects>
             <point key="canvasLocation" x="-91.304347826086968" y="61.607142857142854"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="oPL-dg-qh1">
-            <objects>
-                <viewController id="ds8-nX-kpO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ql8-Hf-BMV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CqX-Te-iQP">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fZ-MM-3p2">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="421"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v72-th-2jx">
-                                        <rect key="frame" x="0.0" y="431" width="414" height="421"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgf-Tj-Nqb">
-                                                <rect key="frame" x="30" y="145" width="354" height="55"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                <state key="normal" title="Add Task">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFy-uo-tNz">
-                                                <rect key="frame" x="30" y="230" width="354" height="55"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                <state key="normal" title="Logout">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a Task" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6x3-gH-tC6">
-                                                <rect key="frame" x="30" y="30" width="354" height="65"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="65" id="zm8-jL-2Ys"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstItem="VFy-uo-tNz" firstAttribute="trailing" secondItem="qgf-Tj-Nqb" secondAttribute="trailing" id="4Ph-dh-isW"/>
-                                            <constraint firstItem="qgf-Tj-Nqb" firstAttribute="leading" secondItem="6x3-gH-tC6" secondAttribute="leading" id="AXd-ki-cjM"/>
-                                            <constraint firstItem="VFy-uo-tNz" firstAttribute="top" secondItem="qgf-Tj-Nqb" secondAttribute="bottom" constant="30" id="CYL-Lm-M3v"/>
-                                            <constraint firstItem="6x3-gH-tC6" firstAttribute="top" secondItem="v72-th-2jx" secondAttribute="top" constant="30" id="Ih4-kN-DR9"/>
-                                            <constraint firstItem="6x3-gH-tC6" firstAttribute="leading" secondItem="v72-th-2jx" secondAttribute="leading" constant="30" id="O4f-N1-xQN"/>
-                                            <constraint firstItem="qgf-Tj-Nqb" firstAttribute="trailing" secondItem="6x3-gH-tC6" secondAttribute="trailing" id="itX-qR-5FT"/>
-                                            <constraint firstItem="VFy-uo-tNz" firstAttribute="height" secondItem="qgf-Tj-Nqb" secondAttribute="height" multiplier="0.861538" constant="7.6153846153846132" id="j1s-Nz-GC4"/>
-                                            <constraint firstAttribute="trailing" secondItem="6x3-gH-tC6" secondAttribute="trailing" constant="30" id="kjL-tV-bOr"/>
-                                            <constraint firstItem="qgf-Tj-Nqb" firstAttribute="top" secondItem="6x3-gH-tC6" secondAttribute="bottom" constant="50" id="q9F-jZ-cQ1"/>
-                                            <constraint firstItem="qgf-Tj-Nqb" firstAttribute="height" secondItem="6x3-gH-tC6" secondAttribute="height" constant="-10" id="sU9-c0-fik"/>
-                                            <constraint firstItem="VFy-uo-tNz" firstAttribute="leading" secondItem="qgf-Tj-Nqb" secondAttribute="leading" id="ufo-mq-AIS"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="fcY-Tr-D5M"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="CqX-Te-iQP" firstAttribute="top" secondItem="fcY-Tr-D5M" secondAttribute="top" id="76z-or-Lzd"/>
-                            <constraint firstAttribute="bottom" secondItem="CqX-Te-iQP" secondAttribute="bottom" id="m8n-hR-OfT"/>
-                            <constraint firstItem="CqX-Te-iQP" firstAttribute="leading" secondItem="fcY-Tr-D5M" secondAttribute="leading" id="pPx-eB-BYc"/>
-                            <constraint firstItem="CqX-Te-iQP" firstAttribute="trailing" secondItem="fcY-Tr-D5M" secondAttribute="trailing" id="s5r-Zt-qbK"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="typ-0Z-jVz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1079.7101449275362" y="49.553571428571423"/>
-        </scene>
         <!--Sign UpVC-->
         <scene sceneID="7M8-R9-Ti3">
             <objects>
@@ -641,14 +564,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
