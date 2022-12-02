@@ -14,27 +14,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//
-//        FirebaseManager.checkAuthState {
-//            // User is Logged In
-//            guard let addTaskVC = storyboard.instantiateViewController(withIdentifier: String(describing: TasksVC.self)) as? TasksVC else {
-//                debugPrint("TasksVC Not Found")
-//                return
-//            }
-//            self.window?.rootViewController = addTaskVC
-//            self.window?.makeKeyAndVisible()
-//        } loggedOut: {
-//            // User is Logged Out
-//            guard let loginVC = storyboard.instantiateViewController(withIdentifier: String(describing: LogInVC.self)) as? LogInVC else {
-//                debugPrint("LogInVC Not Found")
-//                return
-//            }
-//            let navController = storyboard.instantiateInitialViewController() as! UINavigationController
-//            navController.setViewControllers([loginVC], animated: true)
-//            self.window?.rootViewController = navController as UIViewController
-//            self.window?.makeKeyAndVisible()
-//        }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        FirebaseManager.checkAuthState {
+            // User is Logged In
+            guard let addTaskVC = storyboard.instantiateViewController(withIdentifier: String(describing: TasksVC.self)) as? TasksVC else {
+                debugPrint("TasksVC Not Found")
+                return
+            }
+            self.window?.rootViewController = addTaskVC
+            self.window?.makeKeyAndVisible()
+        } loggedOut: {
+            // User is Logged Out
+            guard let loginVC = storyboard.instantiateViewController(withIdentifier: String(describing: LogInVC.self)) as? LogInVC else {
+                debugPrint("LogInVC Not Found")
+                return
+            }
+            let navController = storyboard.instantiateInitialViewController() as! UINavigationController
+            navController.setViewControllers([loginVC], animated: true)
+            self.window?.rootViewController = navController as UIViewController
+            self.window?.makeKeyAndVisible()
+        }
     }
 }
 
