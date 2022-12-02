@@ -112,7 +112,7 @@ extension TasksVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        return 80.0
+        return 75.0
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
